@@ -40,7 +40,7 @@ otherwise accompanies this software in either electronic or hard copy form.
 //#define LOG_ALL_MESSAGES
 //#define LOG_ADD_LISTENER
 //#define LOG_BROADCAST_MESSAGE
-#define REQUIRE_LISTENER
+//#define REQUIRE_LISTENER
  
 using System;
 using System.Collections.Generic;
