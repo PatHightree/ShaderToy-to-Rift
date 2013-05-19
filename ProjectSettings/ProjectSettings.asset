@@ -11,11 +11,11 @@ PlayerSettings:
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: patrick@fultonia.nl
-  productName: Ray marching distance fields
+  productName: ShaderToy to Rift
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  defaultScreenWidth: 1024
-  defaultScreenHeight: 768
+  defaultScreenWidth: 1280
+  defaultScreenHeight: 800
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_RenderingPath: 1
@@ -24,7 +24,7 @@ PlayerSettings:
   m_UseDX11: 0
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
-  displayResolutionDialog: 1
+  displayResolutionDialog: 0
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
   allowedAutorotateToLandscapeRight: 1
@@ -32,7 +32,7 @@ PlayerSettings:
   useOSAutorotation: 1
   use32BitDisplayBuffer: 0
   use24BitDepthBuffer: 0
-  defaultIsFullScreen: 0
+  defaultIsFullScreen: 1
   runInBackground: 1
   captureSingleScreen: 0
   Override IPod Music: 0
@@ -102,8 +102,24 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 090c8748506ef5e4aa0623816b16706a, type: 3}
       m_Size: 128
+  - m_BuildTarget: Standalone
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 090c8748506ef5e4aa0623816b16706a, type: 3}
+      m_Size: 1024
+    - m_Icon: {fileID: 2800000, guid: 090c8748506ef5e4aa0623816b16706a, type: 3}
+      m_Size: 512
+    - m_Icon: {fileID: 2800000, guid: 090c8748506ef5e4aa0623816b16706a, type: 3}
+      m_Size: 256
+    - m_Icon: {fileID: 2800000, guid: 7270508b39334a74595d69ce754dc7bf, type: 3}
+      m_Size: 128
+    - m_Icon: {fileID: 2800000, guid: 5a5ce829026acd44fac2d96524c6d6d2, type: 3}
+      m_Size: 48
+    - m_Icon: {fileID: 2800000, guid: 27d5d16e13a9b6a45a826320fcc54f90, type: 3}
+      m_Size: 32
+    - m_Icon: {fileID: 2800000, guid: 1f44bfad9d85a5a498d7a9f0e957d093, type: 3}
+      m_Size: 16
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
