@@ -2,6 +2,7 @@
 Library/
 Temp/
 *_Data/
+*.unityproj
 
 #ignore thumbnails created by windows
 Thumbs.db
@@ -40,6 +41,9 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 /Assets/UnityVS
 /Assets/UnityVS.meta
-- NOT included
 
+#My unwanted folders
+- NOT included
 /Assets/- NOT included.meta
+- Reference material
+- Reference material.meta
