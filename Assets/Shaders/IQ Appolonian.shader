@@ -93,21 +93,8 @@ void main(void)
 	vec2 p = -1.0 + 2.0*gl_FragCoord.xy / _ScreenParams.xy;
     p.x *= _ScreenParams.x/_ScreenParams.y;
 
-	//float time = _Time.y*0.25 + 0.01*iMouse.x;
-	//float time = _Time.y*0.25 + 0.01*0;
-	float time = 0;
-    ss = 1.1 + 0.5*smoothstep( -0.3, 0.3, cos(0.1*_Time.y) );
-	
-    // camera animation
-	/*
-	vec3 ro = vec3( 2.8*cos(0.1+.33*time), 0.4 + 0.30*cos(0.37*time), 2.8*cos(0.5+0.35*time) );
-	vec3 ta = vec3( 1.9*cos(1.2+.41*time), 0.4 + 0.10*cos(0.27*time), 1.9*cos(2.0+0.38*time) );
-	float roll = 0.2*cos(0.1*time);
-	vec3 cw = normalize(ta-ro);
-	vec3 cp = vec3(sin(roll), cos(roll),0.0);
-	vec3 cu = normalize(cross(cw,cp));
-	vec3 cv = normalize(cross(cu,cw));
-	*/
+	//ss = 1.1 + 0.5*smoothstep( -0.3, 0.3, cos(0.1*_Time.y) );
+    ss = 1.1 + 0.5*smoothstep( -0.3, 0.3, cos(0.1*0) );
 	
 	// camera navigation
 	vec3 ro = iCamPos;
