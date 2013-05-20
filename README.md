@@ -11,7 +11,7 @@ Later on I'd love to have a go at the [juliabulb](https://www.shadertoy.com/view
 Caveat
 ======
 The shader code is GLSL, so it only runs in OpenGL mode.   
-Therefore you have to run Unity with the **-forceopengl** option!
+Therefore you have to run Unity with the **-force-opengl** option!
 
 Credits
 =======
