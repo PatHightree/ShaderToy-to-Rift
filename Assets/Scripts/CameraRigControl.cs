@@ -1,13 +1,28 @@
+using System;
 using UnityEngine;
 using System.Collections;
 
 public class CameraRigControl : MonoBehaviour {
-	
+	[Range(0f, 1f)]
+	public float IPD = 0.064f;
+	private OVRCameraController _ovrController;
+
 	private float _rotSensitivity = 0.1f;
 	private float _moveSensitivity = 0.01f;
 	private Vector3 _move;
 	
+	public void Awake() {
+		_ovrController = (OVRCameraController)FindObjectOfType(typeof(OVRCameraController));
+	}
+
 	public void Update () {
+		// Update IPD
+		float currentIPD = 0f;
+		_ovrController.GetIPD(ref currentIPD);
+		if (Math.Abs(currentIPD - IPD) > float.Epsilon)
+			_ovrController.SetIPD(IPD);
+
+		// Handle input
 	    HandleKeyboardInput();
 	    HandleMouseInput();
 	    HandleSpaceNavigatorInput();
