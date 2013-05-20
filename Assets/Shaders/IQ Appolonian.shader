@@ -94,7 +94,8 @@ void main(void)
     p.x *= _ScreenParams.x/_ScreenParams.y;
 
 	//float time = _Time.y*0.25 + 0.01*iMouse.x;
-	float time = _Time.y*0.25 + 0.01*0;
+	//float time = _Time.y*0.25 + 0.01*0;
+	float time = 0;
     ss = 1.1 + 0.5*smoothstep( -0.3, 0.3, cos(0.1*_Time.y) );
 	
     // camera animation
