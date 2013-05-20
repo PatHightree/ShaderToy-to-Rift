@@ -408,7 +408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400016, guid: 9da535ecc7e009544bd58323d6696a4d, type: 2}
       propertyPath: IPD
-      value: .064000003
+      value: .150000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9da535ecc7e009544bd58323d6696a4d, type: 2}
@@ -493,4 +493,4 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b01ceb753ebd28840a1dc4dda3ae547c, type: 3}
   m_Name: 
-  IPD: .064000003
+  IPD: .150000006
