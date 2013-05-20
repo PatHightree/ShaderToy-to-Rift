@@ -228,9 +228,11 @@ public class OVRMainMenu : MonoBehaviour
 		StoreSnapshot("DEFAULT");
 		
 		// Make sure to hide cursor 
-		Screen.showCursor = false; 
-		Screen.lockCursor = true;
-		
+		if (!Application.isEditor) {
+			Screen.showCursor = false;
+			Screen.lockCursor = true;
+		}
+
 		// Add delegates to update; useful for ordering menu tasks, if required
 		UpdateFunctions += UpdateFPS;
 		
