@@ -22,6 +22,8 @@ Shader "ShaderToy/IQ Appolonian"
             {            
                 GLSLPROGRAM
                 
+				uniform vec2 iViewportOffset;
+				uniform vec2 iViewportScale;
                 uniform vec3 iCamRight;
                 uniform vec3 iCamUp;
                 uniform vec3 iCamForward;
@@ -90,7 +92,8 @@ vec3 calcNormal( in vec3 pos )
 
 void main(void)
 {
-	vec2 p = -1.0 + 2.0*gl_FragCoord.xy / _ScreenParams.xy;
+	vec2 p;
+	p = iViewportOffset + iViewportScale * gl_FragCoord.xy / _ScreenParams.xy;
     p.x *= _ScreenParams.x/_ScreenParams.y;
 
 	//ss = 1.1 + 0.5*smoothstep( -0.3, 0.3, cos(0.1*_Time.y) );
